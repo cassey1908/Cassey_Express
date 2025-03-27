@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top ">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand fw-bold text-primary" href="#">
+            <a class="navbar-brand fw-bold text-primary" href="./admin/dashboard.php">
                 <img src="img/logo.jpg" alt="Logo" width="40" class="me-2">
                 Cassey Express
             </a>

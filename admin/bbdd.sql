@@ -1,5 +1,5 @@
 -- Active: 1736415102513@@127.0.0.1@3306@cassey_express
-DROP DATABASE cassey_express;
+
 CREATE DATABASE cassey_express;
 USE cassey_express;
 
@@ -94,47 +94,3 @@ CREATE TABLE calificaciones (
     fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id) ON DELETE CASCADE
 );
-show tables;
-select * from pedidos;
-
-select * from detalle_pedidos;
-select * from productos;
-select * from carrito;
-select * from productos where  id=1;
-USE cassey_express;
-
-SELECT p.imagen, p.nombre, p.precio, p.id 
-FROM carrito c
-JOIN productos p
-on c.id_producto = p.id
-WHERE c.id_cliente = 14;
-alter table carrito add column cantidad int not null;
-update carrito set cantidad = 1 ;
-
-
-
-SELECT * FROM clientes;
-
-SELECT * FROM pedidos WHERE id_cliente = 12;;
-
---- 
-SELECT p.nombre, p.precio, dp.cantidad, pe.total
-FROM detalle_pedidos dp 
-INNER JOIN pedidos pe ON pe.id = dp.id_pedido
-INNER JOIN productos p ON dp.id_producto = p.id
-WHERE pe.id=;
-
-
-SELECT c.nombre AS cliente, p.nombre AS producto, p.precio, dp.cantidad, pe.total
-FROM detalle_pedidos dp 
-INNER JOIN pedidos pe ON pe.id = dp.id_pedido
-INNER JOIN productos p ON dp.id_producto = p.id
-INNER JOIN clientes c ON pe.id_cliente = c.id
-ORDER BY c.nombre;
-
-SELECT *FROM pedidos;
-
-SELECT c.nombre, c.direccion, p.fecha_pedido, p.total FROM pedidos p
-INNER JOIN clientes c on c.id = p.id_cliente;
-
-
