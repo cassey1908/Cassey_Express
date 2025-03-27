@@ -1,0 +1,80 @@
+/* Estilos generales */
+.navbar {
+    font-size: 1rem;
+}
+
+/* Estilos de los enlaces */
+.nav-link {
+    color: black !important; /* Letras en negro */
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Hover en enlaces */
+.nav-link:hover {
+    color: #ff6600 !important; /* Color naranja al pasar el cursor */
+}
+
+.carousel-item{
+    position: relative;
+    .cortina{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        transition: background-color 0.3s ease;
+    }
+}
+
+#productsSection{
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    white-space: nowrap;
+    padding: 15px;
+
+}
+#productsSection::-webkit-scrollbar{
+    height: 5px;
+}
+#productsSection::-webkit-scrollbar-thumb{
+    background-color: rgba(14, 74, 255, 0.1);
+}
+
+#productsContainer{
+    display: flex;
+    gap: 4;
+}
+.card.comidas{
+    min-width: 300px;
+    max-width: 300px; /* Ajusta el ancho máximo */
+    min-height: 250px; 
+}
+
+.card.comidas .card-text {
+    word-wrap: break-word; /* Permite que las palabras largas se dividan */
+    overflow-wrap: break-word;
+    white-space: normal; /* Asegura que el texto pueda hacer saltos de línea */
+}
+
+
+
+.card.comidas .card-body{
+    width: 100%;
+}
+
+
+
+
+
+

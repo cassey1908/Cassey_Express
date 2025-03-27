@@ -1,0 +1,69 @@
+.main-content {
+    margin-left: 250px;
+    padding: 30px;
+    width: 100%;
+    height:100vh ;
+
+}
+
+.scroll-container {
+    overflow-y: auto;
+    max-height: 600px; /* Ajusta la altura para el scroll */
+}
+
+
+
+
+
+.card {
+    width: 250px; /* Reducir el ancho de la tarjeta */
+    height: 280px; /* Reducir la altura de la tarjeta */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 150px; /* Reducir la altura de las imágenes */
+    object-fit: cover; /* Mantener la proporción de la imagen */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.card .btn {
+    font-size: 0.8rem; /* Reducir el tamaño del botón */
+    padding: 5px 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-md-4 {
+    padding: 10px;
+    display: inline-block;
+}

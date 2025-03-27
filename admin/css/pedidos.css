@@ -1,0 +1,81 @@
+
+        body {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: rgb(223, 154, 58);
+            color: white;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        .sidebar a:hover {
+            background: rgba(255, 255, 255, 0.7);
+            color: black;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            flex-grow: 1;
+            width: 100%;
+            background: #f0e9df;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            width: 300px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .table {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .table th {
+            background-color: rgb(223, 154, 58);
+            font-weight: bold;
+            color: white;
+        }
+        .table tbody tr:hover {
+            background-color: rgba(223, 154, 58, 0.8); 
+        }
+        .table td {
+            text-align: center;
+        }
+        .table td, .table th {
+            padding: 12px;
+        }
+        .product-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product-card img {
+            max-width: 100px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+        }
+   
