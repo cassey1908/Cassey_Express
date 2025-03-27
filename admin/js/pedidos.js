@@ -74,7 +74,14 @@ function actualizarEstado(id_pedido, estado) {
     console.log(xhr.response);
     
      cargarProducto();
-     alert('Pedido actualizado con éxito');
+     //sweetalert
+     Swal.fire({
+        title: 'Pedido actualizado',
+        text: 'El estado del pedido ha sido actualizado con éxito',
+        icon:'success',
+        confirmButtonText: 'Aceptar'
+    });
+    
    })
 
    xhr.send(formData);

@@ -8,6 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="./css/sweetalert2.css">
 </head>
 <body>
 
@@ -131,6 +132,7 @@ include ('./componenetes/aside.php');
     }
 </script>
 <script src="./js/productos.js"></script>
+<script src="./js/sweetalert2.js"></script>
 
 </body>
 </html>

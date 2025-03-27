@@ -174,9 +174,10 @@ function traerCarrito(id_cliente){
     xhr.addEventListener('load',function(e) {
         //verificamos si la respuesta es 200
         if(xhr.status===200){
+            console.log(xhr.response);
+
             //parseamos a json la respuesta del servidor
             let respuesta = JSON.parse(xhr.response);
-            console.log(respuesta);
             //capturamos el div del carrito
             let carrito = document.getElementById('productosCarrito');
             //limpiamos el div

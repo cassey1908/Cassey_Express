@@ -80,10 +80,11 @@ CREATE TABLE detalle_pedidos (
 CREATE TABLE carrito (
     id INT AUTO_INCREMENT PRIMARY KEY,
     id_cliente INT NOT NULL,
-    id_producto INT NOT NULL
+    id_producto INT NOT NULL,
+    cantidad INT NOT NULL
     
 );
-select * from carrito;
+
 
 -- Tabla de Calificaciones
 CREATE TABLE calificaciones (
@@ -94,3 +95,4 @@ CREATE TABLE calificaciones (
     fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id) ON DELETE CASCADE
 );
+ 
